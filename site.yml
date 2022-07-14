@@ -1,0 +1,11 @@
+- name: Connect and create environment in AWS
+  hosts: localhost
+  gather_facts: true
+  vars:
+   ansible_connection: local
+  tasks:
+   - include_role:
+       name: ocp_create_ns
+      
+    
+
