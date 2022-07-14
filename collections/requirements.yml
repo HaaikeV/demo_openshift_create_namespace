@@ -1,2 +1,5 @@
 ---
-- src: redhat.openshift
+collections:
+  - name: redhat.openshift
+    version: 2.2.0
+    type: galaxy
