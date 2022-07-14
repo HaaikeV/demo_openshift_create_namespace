@@ -1,0 +1,1 @@
+# demo_openshift_create_namespace
