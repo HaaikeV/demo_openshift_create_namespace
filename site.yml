@@ -6,6 +6,3 @@
   tasks:
    - include_role:
        name: ocp_create_ns
-      
-    
-

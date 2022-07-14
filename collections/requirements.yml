@@ -1,0 +1,3 @@
+- src: https://github.com/HaaikeV/demo_openshift_create_namespace.git
+  version: 0.0.1
+  name: haaikev.demo_openshift_create_namespace.git
