@@ -10,10 +10,10 @@
 - name: get openshift git deployment repo
   git:
     repo: https://github.com/HaaikeV/sock-shop-ocp-ws.git
-    dest: /tmp/repo
+    dest: repo_dump/
     version: main  
 
 - name: Read Definition file
   k8s:
     state: present
-    definition: "{{ lookup('file', '/tmp/repo/complete-demo.yaml') | from_yaml }}"
+    definition: "{{ lookup('file', 'repo_dump/deploy/kubernetes/complete-demo.yaml') | from_yaml }}"
