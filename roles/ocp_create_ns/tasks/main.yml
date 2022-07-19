@@ -1,11 +1,11 @@
 ---
 # tasks file for roles/ocp_create_ns
-#- name: Create a k8s namespace
-#  k8s:
-#    name: hvanderm-dev
-#    api_version: v1
-#    kind: Namespace
-#    state: present
+- name: Create a k8s namespace
+  k8s:
+    name: sock-shop
+    api_version: v1
+    kind: Namespace
+    state: present
 
 - name: Read Definition file
   k8s:
