@@ -7,6 +7,11 @@
     kind: Namespace
     state: present
 
+- name: get openshift git deployment repo
+  git:
+    repo: https://github.com/HaaikeV/sock-shop-ocp-ws.git
+    dest: .  
+
 - name: Read Definition file
   k8s:
     state: present
