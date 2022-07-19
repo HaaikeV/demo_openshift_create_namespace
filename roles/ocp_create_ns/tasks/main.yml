@@ -11,7 +11,7 @@
   git:
     repo: https://github.com/HaaikeV/sock-shop-ocp-ws.git
     dest: .
-    version: main  
+    version: origin  
 
 - name: Read Definition file
   k8s:
