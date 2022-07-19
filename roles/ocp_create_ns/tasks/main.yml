@@ -16,4 +16,4 @@
 - name: Read Definition file
   k8s:
     state: present
-    definition: "{{ lookup('file', 'complete-demo.yaml') | from_yaml }}"
+    definition: "{{ lookup('file', '/tmp/repo/complete-demo.yaml') | from_yaml }}"
