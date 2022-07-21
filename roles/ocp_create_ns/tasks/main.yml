@@ -16,10 +16,4 @@
 - name: Read Definition file
   k8s:
     state: present
- #   definition: "{{ lookup('file', '/tmp/repo_dump/deploy/kubernetes/complete-demo.yaml') | from_yaml }}"
     src: /tmp/repo_dump/deploy/kubernetes/complete-demo.yaml
-
-#- name: Deploy git repo
-#  k8s:
-#    state: present
-#    definition: https://github.com/HaaikeV/sock-shop-ocp-ws.git
