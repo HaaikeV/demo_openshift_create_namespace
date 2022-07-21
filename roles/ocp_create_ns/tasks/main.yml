@@ -7,17 +7,17 @@
     kind: Namespace
     state: present
 
-#- name: get openshift git deployment repo
-#  git:
-#    repo: https://github.com/HaaikeV/sock-shop-ocp-ws.git
-#    dest: /tmp/repo_dump/
-#    version: main  
+- name: get openshift git deployment repo
+  git:
+    repo: https://github.com/HaaikeV/sock-shop-ocp-ws.git
+    dest: /tmp/repo_dump/
+    version: main  
 
 - name: Read Definition file
   k8s:
     state: present
  #   definition: "{{ lookup('file', '/tmp/repo_dump/deploy/kubernetes/complete-demo.yaml') | from_yaml }}"
-    src: https://github.com/HaaikeV/sock-shop-ocp-ws.git
+    src: /tmp/repo_dump/deploy/kubernetes/complete-demo.yaml
 
 #- name: Deploy git repo
 #  k8s:
